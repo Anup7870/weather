@@ -1,18 +1,24 @@
 
 const getAirQuality = (city) => {
-	const options = {
-		method: 'GET',
-		headers: {
-			'X-RapidAPI-Key': '53a90635e1msh23031d22e1cb204p1a9c4djsn4560c9fd3917',
-			'X-RapidAPI-Host': 'air-quality-by-api-ninjas.p.rapidapi.com'
-		}
-	};
-	fetch('https://air-quality-by-api-ninjas.p.rapidapi.com/v1/airquality?city=' + city, options)
-		.then(response => response.json())
-		.then((response) => {
-			console.log(response)
-		})
-		.catch(err => console.error(err));
+	try {
+		const options = {
+			method: 'GET',
+			headers: {
+				'X-RapidAPI-Key': '53a90635e1msh23031d22e1cb204p1a9c4djsn4560c9fd3917',
+				'X-RapidAPI-Host': 'air-quality-by-api-ninjas.p.rapidapi.com'
+			}
+		};
+		fetch('https://air-quality-by-api-ninjas.p.rapidapi.com/v1/airquality?city=' + city, options)
+			.then(response => response.json())
+			.then((response) => {
+				console.log(response)
+			})
+			.catch(err => console.error(err));
+		
+	} catch (error) {
+		console.log("error is "+ errror);
+	}
+	
 
 }
 

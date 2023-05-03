@@ -67,6 +67,13 @@ header h1{
     grid-template-columns: 1fr 1fr;
     place-items: center;
 }
+@media screen and (min-widht:480px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
 .card{
     background: rgba(255, 255, 255);
     height: 300px;
