@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --ubuntu: 'Ubuntu', sans-serif;
+    --main:#205295;
+    --nav:#82AAE3;
+    --nav-text:#EAFDFC;
+    --nav-big-text:#91D8E4;
+    --dancing: 'Dancing Script', cursive;
+    --roboto:font-family: 'Roboto', sans-serif;
+}
+header{
+background: var(--nav);
+text-align: center;
+box-shadow: 10px 5px 50px black;
+}
+
+header h1{
+    font-family: var(--dancing);
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: var(--nav-text);
+}
+.search{
+    padding-top: 50px;
+    box-shadow: 5px 1px 10px var(--nav);
+}
+.search h3{
+    text-align: center;
+    color: #91D8E4;
+    font-family: var(--dancing);
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+.si{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-left: 83px;
+}
+.btn{
+    margin-left:20px ;
+    padding: 0px 20px;
+    background: var(--nav-text);
+    border: 1px solid rgb(100, 100, 216);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.input{
+ opacity: .5;
+ text-align: center;
+ font-size: 1.1rem;
+ letter-spacing: 1px;
+ outline: none;
+ border-top: none;
+ border-left:none ;
+ border-right:none ;
+}
+.container{
+    background-color: var(--nav);
+    height: 69.5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+.card{
+    background: rgba(255, 255, 255);
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+.tempDiv{
+    /* display: grid; */
+}
+.display{
+    text-align: center;
+}
+.display h2{
+    font-family: var(--dancing);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.display h2 span{
+    font-family: var(--ubuntu);
+}
+.grid{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 12px;
+}
+.item{
+    font-family: var(--ubuntu);
+    font-size: 1.3rem;
+    color: #2C74B3;
+    letter-spacing: 1.5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+
+}
+.item span{
+    color: rgba(233, 51, 51, 0.658) !important;
+}
