@@ -67,11 +67,11 @@ header h1{
     grid-template-columns: 1fr 1fr;
     place-items: center;
 }
-@media screen and (min-widht:480px){
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .container{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
 .card{
