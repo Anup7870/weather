@@ -50,7 +50,7 @@ const getweather = (city) => {
 			console.error(err)
 		});
 }
-
+setInterval(getweather, 2000);
 submit.addEventListener("click", (e) => {
 	e.preventDefault();
 	let dis = document.getElementById("search").value;
